@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="wrap_content">
+	
+	<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1" >
+ 
+    <TableRow>
+    	<TextView         
+	        android:id="@+id/batteryLevel2"
+	        android:textSize="18dip"
+	        android:paddingTop="14dip"
+	        android:paddingLeft="3dip"
+	        android:text="@string/porcentaje" />
+			
+        <TextView         
+	        android:id="@+id/batteryLevel"
+	        android:textSize="18dip"
+	        android:textStyle="bold"
+	        android:paddingTop="14dip"
+	        android:layout_gravity="right"/>
+	     
+    </TableRow>
+	
+    <TableRow>
+        <TextView         
+	        android:id="@+id/batteryStat2"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:text="@string/conectado"
+	        android:paddingLeft="3dip"/>
+       
+	   <TextView         
+	        android:id="@+id/batteryStatus"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:textStyle="bold"
+	        android:layout_gravity="right"
+	        />
+    </TableRow>
+ 
+    <TableRow>
+        <TextView         
+	        android:id="@+id/batteryStatus2"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:text="@string/estado"
+	        android:paddingLeft="3dip"/>
+			
+		<TextView         
+	        android:id="@+id/batteryStat"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:textStyle="bold"
+	        android:layout_gravity="right"
+	       />
+    </TableRow>
+	
+ 	<TableRow>
+        <TextView         
+	        android:id="@+id/batteryHealth2"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:text="@string/salud"
+	        android:paddingLeft="3dip"/>
+			
+		<TextView         
+	        android:id="@+id/batteryHealth"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:layout_gravity="right"
+	        android:textStyle="bold"
+	        />
+    </TableRow>
+	
+	<TableRow>
+        <TextView         
+	        android:id="@+id/batteryTemp2"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:text="@string/grados"
+	        android:paddingLeft="3dip"/>
+			
+		<TextView         
+	        android:id="@+id/batteryTemp"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:textStyle="bold"
+	        android:layout_gravity="right"
+	        />
+    </TableRow>
+	
+	<TableRow>
+       <TextView         
+	        android:id="@+id/batteryVolt2"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:text="@string/volt"
+	        android:paddingLeft="3dip"/>
+			
+		<TextView         
+	        android:id="@+id/batteryVolt"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:layout_gravity="right"
+	        android:textStyle="bold"
+	       />
+    </TableRow>
+	
+	<TableRow>
+       <TextView         
+	        android:id="@+id/batteryTech2"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+	        android:text="@string/tecnologia"
+	      	android:paddingLeft="3dip"/>
+			
+		<TextView         
+	        android:id="@+id/batteryTech"
+	        android:textSize="18dip"
+	        android:paddingTop="7dip"
+			android:textStyle="bold"
+			android:layout_gravity="right"
+	      />
+    </TableRow>
+    
+	</TableLayout>
+</ScrollView>

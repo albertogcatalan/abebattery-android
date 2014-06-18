@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="center" android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/layBanner"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_width="fill_parent">
+
+		<ImageView android:layout_width="wrap_content"
+		    android:contentDescription="@string/imagenwid"
+			android:layout_height="wrap_content"
+			android:id="@+id/ImageView01"
+			android:src="@drawable/icon"
+			android:layout_marginLeft="10dip"/>
+
+		<LinearLayout android:id="@+id/layTitle"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:gravity="right" android:paddingRight="5dip">
+			<TextView android:id="@+id/TextView01"
+				android:layout_height="wrap_content" android:text="@string/app_name"
+				android:textSize="25dip"
+				android:textStyle="bold" android:layout_width="wrap_content" />
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/txtVersion"
+				android:text="@string/txtVersion" android:textSize="12dip" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_height="0dip" android:layout_weight="1"
+		android:layout_width="wrap_content" android:padding="5dip">
+
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_width="fill_parent" android:layout_height="0dip"
+			android:orientation="vertical">
+
+			<TextView android:id="@+id/txtAbout" android:text="@string/txtAbout"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:paddingTop="10dip" android:textSize="18dip" />
+
+			
+
+			<TextView android:id="@+id/txtAgradec" android:text="@string/txtAgradec"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:paddingTop="10dip" android:textSize="18dip" />
+			
+			
+			<TextView android:id="@+id/txtLicense" android:text="@string/txtLicense"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:paddingTop="10dip" android:textSize="18dip" />
+				
+		</LinearLayout>
+	</ScrollView>
+
+	<Button android:id="@+id/btnCerrar" android:paddingTop="5dip" android:layout_height="wrap_content" android:onClick="exitButton"
+		android:text="@string/btnCerrar" android:layout_width="162dp"/>
+</LinearLayout>

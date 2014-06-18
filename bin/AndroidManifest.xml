@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.abelabs.abebatterypro"
+      android:versionName="0.9.11" android:versionCode="29">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15"/>
+    <uses-feature
+		android:name="android.hardware.touchscreen"
+		android:required="false" />
+    <supports-screens
+		android:anyDensity="true"
+		android:normalScreens="true"
+		android:resizeable="true"
+		android:largeScreens="true"
+		android:smallScreens="true" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name"
+        android:name="com.abelabs.abebatterypro.InitGD"
+        android:theme="@style/Theme.Skin1">
+    	<receiver android:name=".StartUpIntentReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<service android:name=".BatteryServiceNotifi" android:enabled="true" />
+        <activity android:label="@string/app_name" android:name=".BatteryLevelActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+			android:name=".About"
+			android:theme="@android:style/Theme.Dialog"
+			android:configChanges="orientation|keyboardHidden" class=".About">
+		
+		</activity>
+		
+		<activity
+			android:name="com.abelabs.abebatterypro.Config"
+			android:label="@string/config"
+			android:configChanges="orientation|keyboardHidden" class=".Config">
+		
+		</activity>
+		
+		<receiver android:name=".Widget_1x1" android:label="@string/widget1">
+	        <intent-filter>
+	           <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	        </intent-filter>
+	        <meta-data
+	           android:name="android.appwidget.provider"
+	           android:resource="@xml/widget_1x1" />
+    	</receiver>
+    	<service android:name=".BatteryService_1x1" />
+    	
+    	<receiver android:name=".Widget_1x1_2" android:label="@string/widget1_1">
+	        <intent-filter>
+	           <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	        </intent-filter>
+	        <meta-data
+	           android:name="android.appwidget.provider"
+	           android:resource="@xml/widget_1x1_2" />
+    	</receiver>
+    	<service android:name=".BatteryService_1x1_2" />
+    	
+    	<receiver android:name=".Widget_2x1" android:label="@string/widget2">
+	        <intent-filter>
+	           <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	        </intent-filter>
+	        <meta-data
+	           android:name="android.appwidget.provider"
+	           android:resource="@xml/widget_2x1" />
+    	</receiver>
+    	<service android:name=".BatteryService_2x1" />
+    	
+    	<receiver android:name=".Widget_2x1_2" android:label="@string/widget2_1">
+	        <intent-filter>
+	           <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	        </intent-filter>
+	        <meta-data
+	           android:name="android.appwidget.provider"
+	           android:resource="@xml/widget_2x1_2" />
+    	</receiver>
+    	<service android:name=".BatteryService_2x1_2" />
+    	
+    	<receiver android:name="com.abelabs.abebatterypro.Widget_3x1" android:label="@string/widget3">
+	        <intent-filter>
+	           <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	        </intent-filter>
+	        <meta-data
+	           android:name="android.appwidget.provider"
+	           android:resource="@xml/widget_3x1" />
+    	</receiver>
+    	<service android:name="com.abelabs.abebatterypro.BatteryService_3x1" />
+    </application>
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AbeBattery</string>
+    <string name="app_url">http://abelabs.com</string>
+    <string name="porcentaje">Battery remaining:</string>
+    <string name="conectado">Connection:</string>
+    <string name="conectado_AC">A/C</string>
+    <string name="conectado_USB">USB</string>
+    <string name="conectado_AC_Off">Not connected</string>
+    <string name="estado">Status:</string>
+    <string name="estado_1">Unknown</string>
+    <string name="estado_2">Charging</string>
+    <string name="estado_3">Discharging</string>
+    <string name="estado_4">Not charging</string>
+    <string name="estado_5">Full charge</string>
+    <string name="salud">Health:</string>
+    <string name="salud_1">Unknown</string>
+    <string name="salud_2">Good</string>
+    <string name="salud_3">Over heat</string>
+    <string name="salud_4">Dead</string>
+    <string name="salud_5">Over voltage</string>
+    <string name="salud_6">Unspecified Failure</string>
+    <string name="salud_7">Cold</string>
+    <string name="refrescar">Refresh</string>
+    <string name="acerca">About</string>
+    <string name="config">Preferences</string>
+    <string name="volt">Voltage:</string>
+    <string name="grados">Temperature:</string>
+    <string name="power">Power battery:</string>
+    <string name="volt_2">mV</string>
+    <string name="grados_2">ºC</string>
+    <string name="tecnologia">Technology:</string>
+    <string name="btnCerrar">Close</string>
+    <string name="energy">Power Usage</string>
+    <string name="imagenwid">ImagenWidget</string>
+	<string name="txtAbout">AbeBattery is a Android application which shows the battery life time status.</string>
+	<string name="txtAgradec">Thanks to @ kix2902 for the help and testing the application.</string>
+	<string name="txtVersion">Version 0.9.11</string>
+	<string name="txtLicense">License GPL. \nPowered by Abelabs.com</string>
+	<string name="conf_general">Notifications</string>
+	<string name="conf_boot">Start at boot</string>
+	<string name="conf_boot_1">The application of AbeBattery will start with the phone</string>
+	<string name="conf_boot1">Persistent icon</string>
+	<string name="conf_boot1_1">AbeBattery icon appears in the notification bar</string>
+	<string name="conf_notifi1">Show percentaje over icon</string>
+	<string name="conf_notifi1_1">Battery percentaje will be shown over the icon.</string>
+	<string name="widget1">Battery (1x1)</string>
+	<string name="widget1_1">Temperature (1x1)</string>
+	<string name="widget2">Charger &amp; Battery (2x1)</string>
+	<string name="widget2_1">Battery &amp; Temperature (2x1)</string>
+	<string name="widget3">Charger, Battery &amp; Temperature (3x1)</string>
+</resources>
+
+
+
+
+
+
+

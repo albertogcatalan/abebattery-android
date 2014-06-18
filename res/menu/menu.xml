@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  	<item android:id="@+id/MnuOpc1" android:title="@string/refrescar" android:icon="@drawable/ic_menu_refresh"></item>
+  	<item android:id="@+id/MnuOpc2" android:title="@string/energy" android:icon="@drawable/ic_menu_flash"></item>
+  	<item android:id="@+id/MnuOpc3" android:title="@string/config" android:icon="@android:drawable/ic_menu_preferences"></item>
+	<item android:id="@+id/MnuOpc4" android:title="@string/acerca" android:icon="@android:drawable/ic_menu_info_details"></item>
+</menu>

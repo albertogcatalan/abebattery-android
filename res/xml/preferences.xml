@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/conf_general">
+
+        <CheckBoxPreference
+                android:key="checkbox_boot_1"
+                android:defaultValue="true"
+                android:title="@string/conf_boot"
+                android:summary="@string/conf_boot_1" />
+                
+        <CheckBoxPreference
+                android:key="checkbox_boot_2"
+                android:defaultValue="true"
+                android:title="@string/conf_boot1"
+                android:summary="@string/conf_boot1_1" />
+        <!-- <CheckBoxPreference
+                android:key="checkbox_notifi_1"
+                android:defaultValue="true"
+                android:title="@string/conf_notifi1"
+                android:summary="@string/conf_notifi1_1" /> -->
+        
+
+    </PreferenceCategory>
+	
+</PreferenceScreen>
